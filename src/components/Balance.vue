@@ -15,5 +15,10 @@ const props = defineProps({
 
 
     <h4>Your Balance</h4>
-    <h1 id="balance">{{ total }} €</h1>
+
+    <h1 id="balance" :style="total > 0 ? 'color: #2ecc71' : 'color: #c0392b'"> <!-- GET THE RIGHT COLORS -->
+
+
+        {{ total }} €
+    </h1>
 </template>
